@@ -1,0 +1,23 @@
+@mixin blocksTitleStyles {
+    font-weight: $title-font-weight;
+    color: $main-text-color;
+    font-size: $size-of-blocks-title;
+}
+
+@mixin blocksSubtitleStyles {
+    font-weight: $main-font-weight;
+    color: $main-text-color;
+    font-size: $size-of-subtitle;
+}
+
+@mixin descStyles {
+    font-weight: $secondary-font-weight;
+    color: $main-text-color;
+    font-size: $size-of-description;
+}
+
+@mixin cardsStyles {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 26px;
+}

@@ -1,0 +1,13 @@
+@import 'nullstyle';
+@import 'variables';
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+h1 {
+    font-size: $size-of-title;
+    font-family: $font-poppins;
+}
+
+
+
