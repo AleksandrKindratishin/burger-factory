@@ -144,6 +144,41 @@
             display: inline-block;
             @include descStyles;
             margin-top: 50px;
+            line-height: 27px;
+        }
+}
+
+
+// Story
+
+
+.story {
+    margin-top: 150px;
+}
+
+.story__conteiner {
+    display: flex;
+    justify-content: space-between;
+
+        h2 {
+            @include blocksTitleStyles;
+        }
+
+        .story__subtitle {
+            @include blocksSubtitleStyles;
+            margin-top: 20px;
+            width: 668px;
+            line-height: 27px;
+        }
+
+        .story__text {
+            @include descStyles;
+            margin-top: 50px;
+            line-height: 27px;
+        }
+
+        img {
+            height: 380px;
         }
 }
 
