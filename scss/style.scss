@@ -99,7 +99,56 @@
 }
 
 
+// ingredients
 
+
+.ingredients__conteiner {
+    text-align: center;
+
+        h2 {
+            margin-top: 150px;
+            @include blocksTitleStyles;
+        }
+
+        .ingredients__subtitle {
+            @include blocksSubtitleStyles;
+            display: inline-block;
+            width: 690px;
+            margin-top: 20px;
+        }
+
+        .list {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .list__card {
+            margin-top: 50px;
+            @include cardsStyles;
+            width: 230px;
+            height: 240px;
+        }
+
+        img {
+            padding: 20px;
+        }
+
+        h3 {
+            color: $main-text-color;
+            font-weight: $main-font-weight;
+            font-size: $size-of-description;
+        }
+
+        .ingredients__text {
+            width: 894px;
+            display: inline-block;
+            @include descStyles;
+            margin-top: 50px;
+        }
+}
+
+
+// 
 
 
 
