@@ -54,6 +54,51 @@
 }
 
 
+// banner
+
+
+.banner {
+    background-image: url(../img/banner/Tracé1.png);
+    background-repeat: no-repeat;
+}
+
+.banner__conteiner {
+    display: flex;
+    justify-content: space-between;
+
+        .banner__description {
+            margin-top: 142px;
+        }
+
+        h1 {
+            font-size: $size-of-title;
+            color: $main-text-color;
+            font-weight: $title-font-weight;
+        }
+
+        p {
+            @include blocksSubtitleStyles;
+            margin-top: 20px;
+        }
+
+        a {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 8px 26px;
+            background-color: $btn-of-bunner-color;
+            border-radius: 10px;
+            color: $main-text-color;
+            font-weight: $main-font-weight;
+            font-size: $size-of-description;
+        }
+
+        img {
+            display: inline-block;
+            margin-top: 50px;
+        }
+}
+
+
 
 
 
