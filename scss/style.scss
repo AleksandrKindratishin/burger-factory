@@ -4,10 +4,59 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
-h1 {
-    font-size: $size-of-title;
-    font-family: $font-poppins;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
+
+.__conteiner {
+    max-width: 1308px;
+    margin: 0px auto;
+}
+
+// hewder
+
+.header {
+    height: 125px;
+
+        .header__conteiner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 125px;
+        }
+
+        ul {
+            display: flex;
+            width: 552px;
+            justify-content: space-between;
+        }
+
+        li {
+            font-size: $size-of-description;
+            font-weight: $main-font-weight;
+
+                a {
+                    color: $main-text-color;
+                }
+        }
+
+        .header__btn {
+            display: inline-block;
+            padding: 10px 32px;
+            background-color: $btn-of-order-color;
+            border-radius: 10px;
+            color: $main-text-color;
+            font-weight: $main-font-weight;
+            font-size: $size-of-description;
+        }
+}
+
+
+
+
+
 
 
 

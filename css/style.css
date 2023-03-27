@@ -72,7 +72,59 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-h1 {
-  font-size: 84px;
-  font-family: PT Sans;
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.__conteiner {
+  max-width: 1308px;
+  margin: 0px auto;
+}
+
+.header {
+  height: 125px;
+}
+.header .header__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 125px;
+}
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 552px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header li {
+  font-size: 18px;
+  font-weight: 700;
+}
+.header li a {
+  color: #2A2A2A;
+}
+.header .header__btn {
+  display: inline-block;
+  padding: 10px 32px;
+  background-color: #00B3FA;
+  border-radius: 10px;
+  color: #2A2A2A;
+  font-weight: 700;
+  font-size: 18px;
 }
