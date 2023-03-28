@@ -258,3 +258,59 @@ h1, h2, h3, h4, h5, h6 {
 .story__conteiner img {
   height: 380px;
 }
+
+.burgers__conteiner h2 {
+  text-align: center;
+  margin-top: 150px;
+  font-weight: 900;
+  color: #2A2A2A;
+  font-size: 64px;
+}
+.burgers__conteiner .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+.burgers__conteiner .burgers__card {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 26px;
+  width: 420px;
+  height: 400px;
+}
+.burgers__conteiner h3 {
+  font-weight: 700;
+  color: #2A2A2A;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+.burgers__conteiner img {
+  display: inline-block;
+  padding: 60px 110px 42px 110px;
+}
+.burgers__conteiner a {
+  display: block;
+  text-align: right;
+  margin-top: 26px;
+  margin-right: 20px;
+  font-size: 18px;
+  color: #008BF6;
+  font-weight: 700;
+}
+.burgers__conteiner .burgers__btn {
+  display: inline-block;
+  padding: 10px 32px;
+  background-color: #00B3FA;
+  border-radius: 10px;
+  color: #2A2A2A;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 590px;
+  margin-top: 50px;
+}

@@ -183,7 +183,62 @@
 }
 
 
-// 
+// Burgers
+
+
+.burgers__conteiner {
+
+        h2 {
+            text-align: center;
+            margin-top: 150px;
+            @include blocksTitleStyles;
+        }
+
+        .list {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .burgers__card {
+            @include cardsStyles;
+            width: 420px;
+            height: 400px;
+        }
+
+        h3 {
+            @include blocksSubtitleStyles;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img {
+            display: inline-block;
+            padding: 60px 110px 42px 110px;
+        }
+
+        a {
+            display: block;
+            text-align: right;
+            margin-top: 26px;
+            margin-right: 20px;
+            font-size: $size-of-description;
+            color: $details-button-color;
+            font-weight: $main-font-weight;
+        }
+
+        .burgers__btn {
+            display: inline-block;
+            padding: 10px 32px;
+            background-color: $btn-of-order-color;
+            border-radius: 10px;
+            color: $main-text-color;
+            font-weight: $main-font-weight;
+            font-size: $size-of-description;
+            margin-left: 590px;
+            margin-top: 50px;
+        }
+}
 
 
 
