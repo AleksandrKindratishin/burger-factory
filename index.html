@@ -5,37 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Burger factory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="header__conteiner __conteiner">
                 <a href="#" class="header__logo">
-                    <img src="img/logo/Groupe 1.png" alt="" class="logo">
+                    <img src="img/logo/Groupe1.png" alt="" class="logo">
                 </a>
                 <nav class="header__nav nav">
                     <ul class="nav__items">
                         <li class="nav__item">
-                            <a href="#" class="nav__link">INGREDIENT</a>
+                            <a href="#to-ingredients" class="nav__link smooth-scroll">INGREDIENT</a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#" class="nav__link">STORY</a>
+                            <a href="#to-story" class="nav__link smooth-scroll">STORY</a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#" class="nav__link">BURGERS</a>
+                            <a href="#to-burgers" class="nav__link smooth-scroll">BURGERS</a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#" class="nav__link">LOCATION</a>
+                            <a href="#to-location" class="nav__link smooth-scroll">LOCATION</a>
                         </li>
                     </ul>
                 </nav>
-                <a href="#" class="header__btn">Order now</a>
+                <a href="#" onclick="openPopup()" class="header__btn">Order now</a>
             </div>
+
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                  <span class="close" onclick="closePopup()">&times;</span>
+                  <form action="">
+                    <input placeholder="Enter your email adress" type="email">
+                    <input placeholder="Enter your phone" type="tel" name="" id="">
+                    <input placeholder="Enter your adress" type="text">
+                    <select name="" id="">
+                        <option value="BURGER 1">BURGER 1</option>
+                        <option value="BURGER 2">BURGER 2</option>
+                        <option value="BURGER 3">BURGER 3</option>
+                    </select>
+                    <button type="submit">Order now</button>
+                  </form>
+                </div>
+              </div>
+
         </header>
 
         <main class="main">
@@ -44,7 +64,7 @@
                     <div class="banner__description">
                         <h1 class="banner__title">Burger Factory</h1>
                         <p class="banner__text">Your dreamed burger close to your locations!</p>
-                        <a href="#" class="banner__btn">Discover the ingredients</a>
+                        <a href="#to-ingredients" class="banner__btn smooth-scroll">Discover the ingredients</a>
                     </div>
                     <div class="banner__image">
                         <img src="img/banner/burger.png" alt="" class="img">
@@ -52,7 +72,7 @@
                 </div>
             </section>
 
-            <section class="ingredients">
+            <section id="to-ingredients" class="ingredients">
                 <div class="ingredients__conteiner __conteiner">
                     <h2 class="ingredients__title">Ingredients</h2>
                     <p class="ingredients__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis id arcu vel maximus.</p>
@@ -83,7 +103,7 @@
                 </div>
             </section>
 
-            <section class="story">
+            <section id="to-story" class="story">
                 <div class="story__conteiner __conteiner">
                     <div class="story__description">
                         <h2 class="story__title">The story</h2>
@@ -97,7 +117,7 @@
                 </div>
             </section>
 
-            <section class="burgers">
+            <section id="to-burgers" class="burgers">
                 <div class="burgers__conteiner __conteiner">
                     <h2 class="burgers__title">Burgers</h2>
                     <div class="burgers__list list">
@@ -117,22 +137,38 @@
                             <a href="#" class="list__details-btn">Details</a>
                         </div>
                     </div>
-                    <a href="#" class="burgers__btn">Order now</a>
+                    <a href="#to-burgers" onclick="openPopup()" class="burgers__btn">Order now</a>
                 </div>
             </section>
 
-            <section class="location">
+            <section id="to-location" class="location">
                 <div class="location__container">
-                    <h2 class="location__title"></h2>
-                    <li class="location__info">
-                        <ul class="location__item_bold"></ul>
-                        <ul class="location__item"></ul>
-                        <ul class="location__item"></ul>
-                        <ul class="location__item"></ul>
-                    </li>
+                    <h2 class="location__title">Location</h2>
+                    <ul class="location__info">
+                        <li class="location__item_bold">Burger Factory</li>
+                        <li class="location__item">Pl. de la Riponne 10</li>
+                        <li class="location__item">1005 Lausanne</li>
+                        <li iclass="location__item">021 800 00 00</li>
+                    </ul>
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2745.189609734136!2d6.6308514155932565!3d46.524149679127746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c2e31ad9a7581%3A0x6910a4219da53f6!2zUGwuIGRlIGxhIFJpcG9ubmUgMTAsIDEwMDUgTGF1c2FubmUsINCo0LLQtdC50YbQsNGA0LjRjw!5e0!3m2!1sru!2sua!4v1680282362143!5m2!1sru!2sua" width="860" height="483" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                 </div>
             </section>
         </main>
+
+        <footer class="footer">
+            <div class="footer__container __conteiner">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo/Groupe1.png" alt="" class="logo">
+                </a>
+                <ul class="footer__local">
+                    <li class="footer__item_bold">Burger Factory</li>
+                    <li class="footer__item">Pl. de la Riponne 10</li>
+                    <li class="footer__item">1005 Lausanne</li>
+                    <li class="footer__item">021 800 00 00</li>
+                </ul>
+            </div>
+        </footer>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

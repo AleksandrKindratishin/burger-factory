@@ -3,6 +3,9 @@
 @import 'mixins';
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+body {
+    font-family: Poppins;
+}
 
 .wrapper {
     display: flex;
@@ -239,6 +242,154 @@
             margin-top: 50px;
         }
 }
+
+
+// Location
+
+
+.location__container {
+    margin: 0 auto;
+    max-width: 860px;
+    margin-top: 156px;
+
+        h2 {
+            @include blocksTitleStyles;
+            text-align: center;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        li {
+            @include blocksSubtitleStyles;
+            font-weight: $secondary-font-weight
+        }
+
+        .location__item_bold {
+            @include blocksSubtitleStyles;
+            font-weight: $main-font-weight;
+        }
+
+        iframe {
+            margin-top: 30px;
+            border-radius: 30px;
+        }
+}
+
+
+// footer
+
+
+.footer {
+    background-color: #F5F5F5;
+    height: 125px;
+    margin-top: 150px;
+
+        .footer__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        li {
+            font-size: $footer-size;
+            font-weight: $secondary-font-weight;
+            color: $main-text-color;
+        }
+
+        .footer__item_bold {
+            font-weight: $main-font-weight;
+        }
+}
+
+
+// pop-up
+
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    animation-name: fadeIn;
+  animation-duration: 0.5s;
+  }
+  
+  .popup-content {
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    background-color: #afe9fe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    animation-name: slideIn;
+  animation-duration: 0.5s;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes slideIn {
+    from {transform: translateY(-50%); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+  }
+  
+  .close {
+    text-align: right;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  input {
+    display: block;
+    width: 200px;
+    margin-bottom: 15px;
+    border: #888 solid;
+    border-radius: 15px;
+  }
+
+  button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 10px 32px;
+    background-color: $btn-of-order-color;
+    border-radius: 10px;
+    color: $main-text-color;
+    font-weight: $main-font-weight;
+    font-size: $size-of-description;
+  }
 
 
 
