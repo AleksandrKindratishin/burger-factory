@@ -42,6 +42,14 @@ body {
 
                 a {
                     color: $main-text-color;
+                    transition-property: all;
+                    transition-duration: 0.2s;
+                    transition-delay: 0s;
+                    transition-timing-function: cubic-bezier(0.75, -1, 0.21, -1);
+
+                    &:hover {
+                        border-bottom: 4px solid $btn-of-order-color;
+                    }
                 }
         }
 
@@ -53,7 +61,13 @@ body {
             color: $main-text-color;
             font-weight: $main-font-weight;
             font-size: $size-of-description;
+            transition: all 0.3s;
+
+                &:hover {
+                    background-color: $btn-of-bunner-color;
+                }
         }
+
 }
 
 
@@ -93,6 +107,11 @@ body {
             color: $main-text-color;
             font-weight: $main-font-weight;
             font-size: $size-of-description;
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: $btn-of-order-color;
+            }
         }
 
         img {
@@ -228,7 +247,12 @@ body {
             font-size: $size-of-description;
             color: $details-button-color;
             font-weight: $main-font-weight;
+            transition: all 0.2s;
         }
+        
+        .list__details-btn:hover {
+                    font-size: 20px;
+                }
 
         .burgers__btn {
             display: inline-block;
@@ -240,8 +264,56 @@ body {
             font-size: $size-of-description;
             margin-left: 590px;
             margin-top: 50px;
+
+            &:hover {
+                background-color: $btn-of-bunner-color;
+            }
         }
 }
+
+// details pop-up
+
+.popup-details {
+    text-align: center;
+    max-width: 35%;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #afe9fe;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    animation-name: fadeIn;
+  animation-duration: 0.5s;
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+        h4 {
+            color: $main-text-color;
+            font-weight: $main-font-weight;
+            font-size: $size-of-description;
+            margin-bottom: 15px;
+        }
+}
+
+.popup-details.show {
+    display: block;
+    opacity: 1;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
 
 
 // Location
@@ -389,6 +461,11 @@ body {
     color: $main-text-color;
     font-weight: $main-font-weight;
     font-size: $size-of-description;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: $btn-of-bunner-color;
+    }
   }
 
 

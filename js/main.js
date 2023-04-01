@@ -39,3 +39,19 @@ function openPopup() {
             window.requestAnimationFrame(scrollToTarget);
         });
     }
+
+
+
+    var detailsBtns = document.querySelectorAll('.list__details-btn');
+    var popup = document.querySelector('.popup-details');
+    var closeBtn = popup.querySelector('.close-btn');
+    
+    detailsBtns.forEach(function(detailsBtn) {
+      detailsBtn.addEventListener('click', function() {
+        popup.classList.add('show');
+      });
+    });
+    
+    closeBtn.addEventListener('click', function() {
+      popup.classList.remove('show');
+    });
