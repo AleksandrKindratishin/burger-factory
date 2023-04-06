@@ -640,10 +640,13 @@ button:hover {
   background-color: #F6E224;
 }
 
-@media (min-width: 320px) and (max-width: 876px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .__conteiner {
     max-width: 320px;
     margin: 0 auto;
+  }
+  .header__conteiner .logo {
+    width: 150px;
   }
   .header__conteiner .header__btn {
     display: none;
@@ -675,5 +678,180 @@ button:hover {
   .header.open nav {
     top: 0;
     visibility: visible;
+  }
+  .banner__conteiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .banner__conteiner .banner__description {
+    margin-top: 44px;
+  }
+  .banner__conteiner h1 {
+    font-size: 64px;
+    text-align: center;
+  }
+  .banner__conteiner p {
+    text-align: center;
+  }
+  .banner__conteiner a {
+    display: block;
+    text-align: center;
+  }
+  .banner__conteiner img {
+    width: 300px;
+  }
+  .ingredients {
+    margin-top: -80px;
+  }
+  .ingredients__conteiner h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .ingredients__conteiner .ingredients__subtitle {
+    font-size: 15px;
+    text-align: center;
+    max-width: 310px;
+  }
+  .ingredients__conteiner .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 15px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 15px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .ingredients__conteiner .list > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .ingredients__conteiner .list > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .ingredients__conteiner .list > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .ingredients__conteiner .list > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .ingredients__conteiner .list__card {
+    margin-top: 0;
+    max-width: 160px;
+    max-height: 160px;
+  }
+  .ingredients__conteiner .list__img {
+    width: 130px;
+    height: 130px;
+  }
+  .ingredients__conteiner .ingredients__text {
+    max-width: 310px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .story {
+    margin-top: 65px;
+  }
+  .story__conteiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .story__conteiner h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .story__conteiner .story__subtitle {
+    font-size: 15px;
+    text-align: center;
+    max-width: 310px;
+  }
+  .story__conteiner .story__text {
+    max-width: 310px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .story__conteiner .img {
+    max-width: 310px;
+    max-height: 270px;
+  }
+  .burgers__conteiner h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 65px;
+  }
+  .burgers__conteiner .burgers__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .burgers__conteiner .burgers__card {
+    max-width: 250px;
+    max-height: 230px;
+  }
+  .burgers__conteiner .burgers__btn {
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    max-width: 200px;
+  }
+  .burgers__conteiner .list__image {
+    padding: 30px 55px 21px 80px;
+    max-width: 230px;
+  }
+  .burgers__conteiner .list__title {
+    font-size: 18px;
+  }
+  .location__container {
+    margin-top: -5px;
+  }
+  .location__container h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 65px;
+  }
+  .location__container .location__info {
+    max-width: 310px;
+    margin: 15px auto;
+  }
+  .location__container .location__item {
+    font-size: 14px;
+  }
+  .location__container .location__item_bold {
+    font-size: 14px;
+  }
+  .location__container iframe {
+    display: block;
+    max-width: 310px;
+    max-height: 180px;
+    margin: 0 auto;
+  }
+  .footer {
+    margin-top: 50px;
+  }
+  .footer .logo {
+    width: 150px;
+  }
+  .popup-content {
+    width: 50%;
+  }
+  .popup-details {
+    max-width: 60%;
   }
 }
